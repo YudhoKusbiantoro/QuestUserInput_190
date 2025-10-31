@@ -10,4 +10,10 @@ fun FormDataDiri(modifier: Modifier
     var textNama by remember { mutableSetOf("") }
     var textAlamat by remember { mutableSetOf("") }
     var textJK by remember { mutableSetOf("") }
+
+    // variable variable untuk menyimpan data yang di peroleh dari komonen UI
+
+    var nama by remember { mutableSetOf("") }
+    var alamat by remember { mutableSetOf("") }
+    var jenis by remember { mutableSetOf("") }
 }
