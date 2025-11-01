@@ -78,7 +78,20 @@ fun FormDataDiriTugasKedua(modifier: Modifier = Modifier) {
         }
         Spacer(modifier = Modifier.height(height = 25.dp))
 
-    }
+        Card(
+            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+            colors = CardDefaults.cardColors(containerColor = Color.White),
+            modifier = Modifier
+                .height(height = 600.dp)
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp)
+        ) {
+            Column(
+                modifier = Modifier
+                    .padding(20.dp)
+                    .verticalScroll(rememberScrollState()),
+                horizontalAlignment = Alignment.Start
+            ) {
 }
 
 
