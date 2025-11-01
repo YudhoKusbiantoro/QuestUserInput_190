@@ -43,7 +43,12 @@ fun FormDataDiriTugasKedua(modifier: Modifier = Modifier) {
     var textJK by remember { mutableStateOf("") }
     var textStatus by remember { mutableStateOf("") }
 
-                }
+    // Variabel untuk menyimpan data hasil submit
+    var nama by remember { mutableStateOf("") }
+    var alamat by remember { mutableStateOf("") }
+    var jenisKelamin by remember { mutableStateOf("") }
+    var statusPerkawinan by remember { mutableStateOf("") }
+
             }
         }
     }
