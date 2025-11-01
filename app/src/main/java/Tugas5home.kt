@@ -106,6 +106,31 @@ fun FormDataDiriTugasKedua(modifier: Modifier = Modifier) {
                     placeholder = { Text("Isian nama lengkap") },
                     modifier = Modifier.fillMaxWidth()
                 )
+                Text(
+                    text = "Jenis Kelamin",
+                    style = MaterialTheme.typography.bodyMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
+                )
+                Column {
+                    gender.forEach { item ->
+                        Row(modifier = Modifier.selectable(
+                            selected = textJK == item,
+
+                            onClick = {textJK = item}
+                        ), verticalAlignment = Alignment.CenterVertically){
+                            RadioButton(
+                                selected = textJK == item,
+
+                                onClick = {
+                                    textJK = item
+                                })
+                            Text(item)
+
+                        }
+                    }
+                }
+    }
 }
 
 
