@@ -34,10 +34,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.example.pert5.R
 
+@Composable
+fun FormDataDiriTugasKedua(modifier: Modifier = Modifier) {
 
-            }
-        }
-    }
 }
 
 
