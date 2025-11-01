@@ -130,7 +130,31 @@ fun FormDataDiriTugasKedua(modifier: Modifier = Modifier) {
                         }
                     }
                 }
-    }
+                Text(
+                    text = "Status Perkawinan",
+                    style = MaterialTheme.typography.bodyMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
+                )
+                Column {
+                    status.forEach { item ->
+                        Row(
+                            modifier = Modifier.selectable(
+                                selected = textStatus == item,
+
+                                onClick = { textStatus = item }
+                            ), verticalAlignment = Alignment.CenterVertically) {
+                            RadioButton(
+                                selected = textStatus == item,
+
+                                onClick = {
+                                    textStatus = item
+                                })
+                            Text(item)
+                        }
+                    }
+
+                }
 }
 
 
