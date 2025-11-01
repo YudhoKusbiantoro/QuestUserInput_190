@@ -176,6 +176,14 @@ fun FormDataDiriTugasKedua(modifier: Modifier = Modifier) {
                             textJK.isNotEmpty() &&
                             textStatus.isNotEmpty() &&
                             textAlamat.isNotEmpty(),
+                    onClick = {
+                        nama = textNama
+                        jenisKelamin = textJK
+                        statusPerkawinan = textStatus
+                        alamat = textAlamat
+                    }
+                ) {
+                    Text(stringResource(R.string.submit))
 
                 }
             }
