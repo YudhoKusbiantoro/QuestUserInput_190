@@ -168,6 +168,18 @@ fun FormDataDiriTugasKedua(modifier: Modifier = Modifier) {
                     placeholder = { Text("Alamat") },
                     modifier = Modifier.fillMaxWidth()
                 )
+
+                Button(
+                    modifier = Modifier.fillMaxWidth(1f)
+                        .padding(top = 5.dp),
+                    enabled = textNama.isNotEmpty() &&
+                            textJK.isNotEmpty() &&
+                            textStatus.isNotEmpty() &&
+                            textAlamat.isNotEmpty(),
+
+                }
+            }
+        }
     }
 }
 
