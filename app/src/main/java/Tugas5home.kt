@@ -53,9 +53,13 @@ fun FormDataDiriTugasKedua(modifier: Modifier = Modifier) {
     val gender = listOf("Laki-laki", "Perempuan")
     val status = listOf("Janda", "Lajang", "Duda")
 
-            }
-        }
-    }
+    Column(
+        modifier = Modifier
+            .padding(top = 50.dp)
+            .fillMaxWidth(),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
 }
 
 
