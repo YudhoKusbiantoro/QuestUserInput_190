@@ -76,6 +76,8 @@ fun FormDataDiriTugasKedua(modifier: Modifier = Modifier) {
                 modifier = Modifier.align(Alignment.CenterStart)
             )
         }
+        Spacer(modifier = Modifier.height(height = 25.dp))
+
     }
 }
 
