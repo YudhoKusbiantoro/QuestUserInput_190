@@ -1,6 +1,7 @@
 package com.example.pert5
 
 import FormDataDiri
+import FormDataDiriTugasKedua
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Pert5Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    FormDataDiri(
+                    FormDataDiriTugasKedua(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
