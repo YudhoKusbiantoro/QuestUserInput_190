@@ -92,6 +92,20 @@ fun FormDataDiriTugasKedua(modifier: Modifier = Modifier) {
                     .verticalScroll(rememberScrollState()),
                 horizontalAlignment = Alignment.Start
             ) {
+
+                // NAMA LENGKAP
+                Text(
+                    text = "NAMA LENGKAP",
+                    style = MaterialTheme.typography.labelMedium,
+                    fontWeight = FontWeight.SemiBold
+                )
+                OutlinedTextField(
+                    value = textNama,
+                    onValueChange = { textNama = it },
+                    singleLine = true,
+                    placeholder = { Text("Isian nama lengkap") },
+                    modifier = Modifier.fillMaxWidth()
+                )
 }
 
 
