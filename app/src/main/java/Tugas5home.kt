@@ -37,6 +37,16 @@ import com.example.pert5.R
 @Composable
 fun FormDataDiriTugasKedua(modifier: Modifier = Modifier) {
 
+    // Variabel untuk menyimpan input sementara
+    var textNama by remember { mutableStateOf("") }
+    var textAlamat by remember { mutableStateOf("") }
+    var textJK by remember { mutableStateOf("") }
+    var textStatus by remember { mutableStateOf("") }
+
+                }
+            }
+        }
+    }
 }
 
 
