@@ -49,6 +49,10 @@ fun FormDataDiriTugasKedua(modifier: Modifier = Modifier) {
     var jenisKelamin by remember { mutableStateOf("") }
     var statusPerkawinan by remember { mutableStateOf("") }
 
+    // Daftar pilihan
+    val gender = listOf("Laki-laki", "Perempuan")
+    val status = listOf("Janda", "Lajang", "Duda")
+
             }
         }
     }
