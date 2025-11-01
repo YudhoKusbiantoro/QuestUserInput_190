@@ -155,6 +155,20 @@ fun FormDataDiriTugasKedua(modifier: Modifier = Modifier) {
                     }
 
                 }
+                Text(
+                    text = "Alamat",
+                    style = MaterialTheme.typography.bodyMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
+                )
+                OutlinedTextField(
+                    value = textAlamat,
+                    onValueChange = { textAlamat = it },
+                    singleLine = true,
+                    placeholder = { Text("Alamat") },
+                    modifier = Modifier.fillMaxWidth()
+                )
+    }
 }
 
 
